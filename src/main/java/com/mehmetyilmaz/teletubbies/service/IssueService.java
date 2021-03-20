@@ -1,7 +1,7 @@
 package com.mehmetyilmaz.teletubbies.service;
 
 import com.mehmetyilmaz.teletubbies.dto.IssueDto;
-import org.springframework.data.domain.Page;
+import com.mehmetyilmaz.teletubbies.util.TPage;
 import org.springframework.data.domain.Pageable;
 
 public interface IssueService {
@@ -10,6 +10,6 @@ public interface IssueService {
 
     IssueDto getById(Long id);
 
-    Page<IssueDto> getAllPagination (Pageable pageable);
+    TPage<IssueDto> getAllPagination (Pageable pageable);
 
 }
