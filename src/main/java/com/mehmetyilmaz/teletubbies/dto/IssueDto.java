@@ -1,13 +1,15 @@
 package com.mehmetyilmaz.teletubbies.dto;
 
 import com.mehmetyilmaz.teletubbies.entity.IssueStatus;
-import com.mehmetyilmaz.teletubbies.entity.Project;
-import com.mehmetyilmaz.teletubbies.entity.User;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class IssueDto {
     private Long id;
     private String description;
