@@ -5,7 +5,9 @@ import com.mehmetyilmaz.teletubbies.repository.IssueHistoryRepository;
 import com.mehmetyilmaz.teletubbies.service.IssueHistoryService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
+@Service
 public class IssueHistoryServiceImpl implements IssueHistoryService {
 
     private final IssueHistoryRepository issueHistoryRepository;
