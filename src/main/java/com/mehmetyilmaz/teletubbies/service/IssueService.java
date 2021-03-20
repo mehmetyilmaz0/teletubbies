@@ -1,15 +1,15 @@
 package com.mehmetyilmaz.teletubbies.service;
 
-import com.mehmetyilmaz.teletubbies.entity.Issue;
+import com.mehmetyilmaz.teletubbies.dto.IssueDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 public interface IssueService {
 
-    Issue save (Issue issue);
+    IssueDto save (IssueDto issue);
 
-    Issue getById(Long id);
+    IssueDto getById(Long id);
 
-    Page<Issue> getAllPagination (Pageable pageable);
+    Page<IssueDto> getAllPagination (Pageable pageable);
 
 }
